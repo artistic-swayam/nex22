@@ -100,12 +100,15 @@
     position: absolute;
     bottom: 2vw;
     right: 2vw;
-    z-index: 9998
+    z-index: 9998;
+    padding: 30px 10px 10px 10px;
+    background: var(--2nd);
+    border-radius: 14px;
 }
 
 .calendly-badge-widget .calendly-badge-content {
     border-radius: 10px;
-    box-shadow: 0 0 30px #ff6a00aa;
+   
     cursor: pointer;
     display: table-cell;
     font-size: 14px;
