@@ -450,7 +450,7 @@ hr {
 
 .reviews,
 .expertise {
-    background: linear-gradient(to top, #33220a 0%, #271700 10%, #070212 100%);
+    background: linear-gradient(to top, #ad5207 0%, #572a04 10%, #070212 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
@@ -2636,6 +2636,76 @@ i{
 .abt-type{
     text-align: center;
 }
+.reviews{
+    margin: 60px 50px;
+    border-radius: 10px;
+}
+.faq-section {
+      padding: 0 50px;
+      
+      
+      
+      color: var(--2nd);
+    }
+
+
+    .faq-item {
+          cursor: pointer;
+    font-family: var(--2nd-font);
+    background: var(--2nd);
+    color: var(--1st);
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px var(--1st);
+
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--font-tiny);
+      font-weight: 500;
+      opacity: .7;
+    }
+
+    .faq-toggle {
+      transition: transform 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 10px;
+    
+    
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      font-size: 16px;
+      color: black;
+      transition: max-height 0.8s ease, opacity 0.5s ease;
+      opacity: 0;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+    }
+    .active{
+        display: flex;
+       flex-direction: column;
+    }
+    .reviews {
+        background: linear-gradient(to top, #ad5207 0%, #572a04 10%, #070212 100%);
+    }
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -2659,6 +2729,7 @@ i{
 }
 
 @media (max-width:900px) {
+    
     .hero-abt-top{
         background: transparent;
         padding: 4vh 0 0 0 ;
@@ -2667,23 +2738,23 @@ i{
     }
     .bar-container {
         width: 100px;
-        height: 10px
+        height: 10px;
     }
 
     .loader-text {
-        font-size: var(--font-small-ad)
+        font-size: var(--font-small-ad);
     }
 
     span h2 {
-        font-size: var(--font-tiny)
+        font-size: var(--font-tiny);
     }
 
     .upper {
-        height: 80vh
+        height: 80vh;
     }
 
     .lower {
-        height: 20vh
+        height: 20vh;
     }
 
     .hero-text {
@@ -2691,7 +2762,7 @@ i{
         font-size: 17vw;
         flex-direction: column;
         justify-content: start;
-        align-items: start
+        align-items: start;
     }
 
     .text {
@@ -2699,19 +2770,19 @@ i{
         width: 100%;
         display: flex;
         align-items: center;
-        flex-direction: column
+        flex-direction: column;
     }
 
     .lower-text {
-        display: none
+        display: none;
     }
 
     .btn {
-        font-size: var(--font-mini)
+        font-size: var(--font-mini);
     }
 
     .menu-i {
-        padding: 2vw
+        padding: 2vw;
     }
 
     .head {
@@ -2725,76 +2796,88 @@ i{
     }
 
     .brand {
-        font-size: var(--font-tiny)
+        font-size: var(--font-tiny);
     }
 
     .works {
-        gap: 20px
+        gap: 20px;
     }
 
     .work .type {
-        font-size: var(--font-mini)
+        font-size: var(--font-mini);
     }
 
     .testimonials {
-        gap: 20px
+        gap: 20px;
     }
 
     .testimonial {
         width: 50vw;
-        padding: 10px
+        padding: 10px;
     }
 
     .work-row {
         align-items: center;
         flex-direction: column;
-        gap: 20px
+        gap: 20px;
     }
 
     .o-link {
-        font-size: var(--font-small)
+        font-size: var(--font-small);
     }
 
     .copy {
-        font-size: var(--font-mini)
+        font-size: var(--font-mini);
     }
 
     .monial {
-        font-size: var(--font-mini)
+        font-size: var(--font-mini);
     }
 
     .profile {
-        gap: 5px
+        gap: 5px;
     }
 
     .profession {
-        font-size: var(--font-tiny-mini)
+        font-size: var(--font-tiny-mini);
     }
 
     .m-profession {
-        font-size: 13px
+        font-size: 13px;
     }
 
     .a-name {
-        font-size: var(--font-tiny-ad)
+        font-size: var(--font-tiny-ad);
     }
 
     .services {
         font-size: 5.5vw;
-        gap: 3vw
+        gap: 3vw;
     }
 
     .c-type {
-        font-size: var(--font-tiny-mini)
+        font-size: var(--font-tiny-mini);
     }
 
     .contact-bt {
         font-size: 3vw;
-        padding: 10px 30px
+        padding: 10px 30px;
     }
 
     .c-arrow {
-        font-size: var(--font-tiny-mini)
+        font-size: var(--font-tiny-mini);
+    }
+    .member-row{
+        padding: 40px 25px;
+    }
+    .reviews{
+        margin: 40px 25px;
+    }
+    .faq-section{
+        padding: 0 25px;
+    }
+    .head-container{
+        padding: 25px;
     }
 }
 
@@ -2805,30 +2888,30 @@ i{
         gap: 30px;
         top: -50%;
         height: auto;
-        background: var(--2nd)
+        background: var(--2nd);
     }
 
     .m {
-        width: 95%
+        width: 95%;
     }
 
     .about .monial {
-        height: 80%
+        height: 80%;
     }
 
     .a-profile {
-        width: 95%
+        width: 95%;
     }
 
     .info {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
     .tools,
     .hobbies,
     .dev {
-        height: auto
+        height: auto;
     }
 
     .txt {
@@ -2847,10 +2930,10 @@ i{
     .one,
     .two,
     .three {
-        background-position: -80px center
+        background-position: -80px center;
     }
 
     .text {
-        height: 30%
+        height: 30%;
     }
 }
