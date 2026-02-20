@@ -27,7 +27,7 @@ let wordsArray = [
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  cnv.parent("contacts");
+  cnv.parent("why");
   cnv.id("bgCanvas");
 
   engine = Engine.create();
@@ -51,7 +51,8 @@ function setup() {
   };
   mouseConstraint = MouseConstraint.create(engine, options);
   World.add(world, mouseConstraint);
-
+resizeCanvas(document.querySelector(".why").offsetWidth, 
+               document.querySelector(".why").offsetHeight);
   noLoop(); // don't draw until triggered
 }
 
@@ -142,6 +143,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-observer.observe(document.querySelector(".contacts"));
+observer.observe(document.querySelector(".why"));
 
 
