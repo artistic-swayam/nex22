@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 // Preloader timeline
 tl.to("#bar", {
     width: "100%",
-    duration: 1,
+    duration: 5,
     onComplete: function () {
         console.log("Loading complete!");
         loader.style.display = "none";
