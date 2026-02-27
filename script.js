@@ -21,7 +21,7 @@ tl.to("#bar", {
         loader.style.display = "none";
         gsap.from(".home", {
             opacity: 0,
-            duration: 4,
+            duration: 5,
             ease: "power2.out"
         })
     }
