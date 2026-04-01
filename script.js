@@ -15,13 +15,13 @@ gsap.registerPlugin(ScrollTrigger);
 // Preloader timeline
 tl.to("#bar", {
     width: "100%",
-    duration: 5,
+    duration: 1,
     onComplete: function () {
         console.log("Loading complete!");
         loader.style.display = "none";
         gsap.from(".home", {
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
             ease: "power2.out"
         })
     }
@@ -235,29 +235,8 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// IST Time fetch
-async function getIST() {
-    try {
-        const res = await fetch("https://timeapi.io/api/Time/current/zone?timeZone=Asia/Kolkata");
-        const data = await res.json();
 
-        let hours = data.hour;
-        let minutes = data.minute;
-        let seconds = data.seconds;
-        const ampm = hours >= 12 ? "PM" : "AM";
-
-        hours = hours % 12 || 12;
-        minutes = String(minutes).padStart(2, "0");
-        seconds = String(seconds).padStart(2, "0");
-
-        const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
-        document.getElementById("indian-time").textContent = `| Time (IST): ${timeString} |`;
-    } catch (e) {
-        document.getElementById("indian-time").textContent = "⚠️ Couldn't fetch IST.";
-        console.error(e);
-    }
-}
-
+//
 
 document.querySelectorAll('.faq-item').forEach(item => {
       item.addEventListener('click', () => {
